@@ -1,3 +1,4 @@
+import "./css/variables.css";
 import "./css/font.css";
 import "./css/normalise.css";
 import "./css/styles.css";
@@ -10,7 +11,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta charset="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, user-scalable=yes"

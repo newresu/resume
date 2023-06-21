@@ -1,7 +1,7 @@
+import { Section } from "../Section";
 export function Education() {
   return (
-    <div class="education">
-      <h2 id="education_title">Education</h2>
+    <Section title={"Education"} classNames={["education", "foldable"]}>
       <ul>
         <li>
           <p>
@@ -22,7 +22,7 @@ export function Education() {
           <p>
             The thesis was developed at the Centre For Inorganic Chemistry and
             supervised by Martin Lavecchia{" "}
-            <a href="mailto:lavecchia@gmail.com" class="email">
+            <a href="mailto:lavecchia@gmail.com" className="email">
               lavecchia@gmail.com
             </a>{" "}
             and Carlos Franca.
@@ -42,6 +42,6 @@ export function Education() {
         </li>
       </ul>
       <hr />
-    </div>
+    </Section>
   );
 }

@@ -1,20 +1,19 @@
 // work history component
+import { Section } from "../Section";
 export function WorkHistory() {
   return (
-    <div class="work-history">
-      <h2 id="work-history_title">Work History</h2>
+    <Section title={"Work History"} classNames={["work-history", "foldable"]}>
       <ul>
         <li>
           <p>
             <strong>2021-2022</strong>: Github Open Source Contributor
           </p>
           <p>
-            Contributor to chemistry projects written in Typescript, Javascript
-            or Python. I’ve written code for{" "}
+            Contributor to Typescript projects. Among these:
             <a href="https://github.com/santimirandarp/varian-converter">
               parsing NMR data
-            </a>{" "}
-            (Varian/Agilent) as well as{" "}
+            </a>
+            (Varian/Agilent) as well as
             <a href="https://github.com/santimirandarp/wdf-parser">
               Raman data
             </a>
@@ -23,7 +22,7 @@ export function WorkHistory() {
             transfer and understood by any web browser.
           </p>
           <p>
-            <a href="https://github.com/santimirandarp" class="img-link">
+            <a href="https://github.com/santimirandarp" className="img-link">
               <img src="./github.svg" height={24} alt="github" /> Github
             </a>
           </p>
@@ -59,6 +58,6 @@ export function WorkHistory() {
         </li>
       </ul>
       <hr />
-    </div>
+    </Section>
   );
 }

@@ -1,7 +1,7 @@
+import { Section } from "../Section";
 export function Hobbies() {
   return (
-    <div class="hobbies">
-      <h2 id="hobbies_title">Other interests</h2>
+    <Section title={"Other interests"} classNames={["hobbies", "foldable"]}>
       <ul>
         <li>
           <p>
@@ -29,6 +29,6 @@ export function Hobbies() {
         </li>
       </ul>
       <hr />
-    </div>
+    </Section>
   );
 }
