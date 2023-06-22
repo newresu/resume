@@ -14,18 +14,17 @@ export function Education() {
               Computational calculation of thermodynamical properties for
               chemical reactions in condensed phase
             </em>
-            . The thesis consisted in putting together chemistry packages used
-            for conformer generation, solvent effect simulation, semi-empirical
-            quantum calculations and statistical calculations. The program was
-            written in Python.
+            . The thesis involved integrating packages for conformer generation,
+            solvent effect simulation, semi-empirical quantum calculations and
+            statistical calculations. Language: Python.
           </p>
           <p>
             The thesis was developed at the Centre For Inorganic Chemistry and
-            supervised by Martin Lavecchia{" "}
+            supervised by Martin Lavecchia (
             <a href="mailto:lavecchia@gmail.com" className="email">
               lavecchia@gmail.com
-            </a>{" "}
-            and Carlos Franca.
+            </a>
+            ) and Carlos Franca.
           </p>
         </li>
         <li>
@@ -41,7 +40,6 @@ export function Education() {
           </p>
         </li>
       </ul>
-      <hr />
     </Section>
   );
 }

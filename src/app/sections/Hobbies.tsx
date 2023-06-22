@@ -27,8 +27,17 @@ export function Hobbies() {
             Centres in Italy (Thabarwa) and England (Kadampa).
           </p>
         </li>
+        <li>
+          <p>
+            <strong>Computer-Related Hobbies</strong>
+          </p>
+          <p>
+            I like to learn about new technologies and programming languages,
+            and recently got involved with AWK programming language, and
+            creating simple experiments with Arduinos.
+          </p>
+        </li>
       </ul>
-      <hr />
     </Section>
   );
 }
