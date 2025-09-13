@@ -7,5 +7,6 @@ export default defineConfig({
   build: {
     outDir: 'docs',
   },
-  base: "/resume"
+  // See: https://vite.dev/guide/static-deploy
+  base: "/resume" // this is needed for gh pages (it's repo's name)
 })

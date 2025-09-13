@@ -17,53 +17,33 @@ export function WorkHistory() {
           </p>
           <div className="tasks">
             <p>
-              <b>
-                <a
-                  href="https://www.chem.gla.ac.uk/cronin/members/santi-miranda/"
-                  style={{
-                    paddingLeft: 0,
-                  }}
-                >
-                  Digital Chemistry Group
-                </a>
-              </b>{" "}
-              is focused on developing software for a robot capable of performing chemical experiments.
-              My role here was to contribute to this project. Sadly, this role was overly challenging for me,
+              <b>Robotics and Artificial Intelligence</b>,
+              The <a
+                href="https://www.chem.gla.ac.uk/cronin/members/santi-miranda/"
+              >
+                Digital Chemistry Group
+              </a> is a research group led by <a href="https://en.wikipedia.org/wiki/Leroy_Cronin">Leroy Cronin</a>. The group develops software for a robot capable of performing chemical experiments.
+            </p>
+            <p>
+              My primary contribution was to refactor a Chemical Variational Auto-Encoder
+              (CVAE), which is a specific kind of neural network that encodes the input in a lower dimensional space.
+              Plus, adding functionality for running this project within a web browser. The code is private due to licensing. The original (unmaintained) project can be found
+              at <a href="https://github.com/aspuru-guzik-group/chemical_vae">aspuru-guzik-group/chemical_vae</a>.
+            </p>
+            <p>
+              Sadly, this role was overly challenging for me,
               primarily due to my limited experience with Robotics, and strong safety concerns given the very low
-              guardrails in place (since this was a research project).
+              guardrails in place (this was a research project.)
+              After leaving my role at Glasgow, I returned to mathematics, and implemented the paper "TNT: A Solver for Large Dense Least-Squares Problems that Takes Conjugate Gradient from Bad in Theory, to Good in Practice"
+              in Typescript. The code can be found at
+              <a href="https://github.com/newresu/fit-tnt">newresu/fit-tnt</a>.
             </p>
             <p>
-              My primary contribution was to refactor a variational autoencoder
-              (VAE) for chemical structures and included functionality for running this project within a web browser. This code is private due to licensing, the original (unmaintained) project can be found
-              at <a href="https://github.com/aspuru-guzik-group/chemical_vae" style={{ paddingLeft: 0, }}>aspuru-guzik-group/chemical_vae</a>.
-            </p>
-            <p>
-              After leaving my role at Glasgow, I implemented the paper "TNT: A Solver for Large Dense Least-Squares Problems that Takes Conjugate Gradient from Bad in Theory, to Good in Practice"
-              in Typescript. The code can be found at {" "}
-              <b>
-                <a
-                  href="https://github.com/newresu/fit-tnts"
-                  style={{
-                    paddingLeft: 0,
-                  }}
-                >newresu/fit-tnt</a>.
-              </b>
-            </p>
-            <p>
-              For the application to this job, I made a screencast showing parts of the project in Computer Vision that automatically deletes
-              personal identifiable information from identity cards {" "}
-              <b>
-                <a
-                  href=""
-                  style={{
-                    paddingLeft: 0,
-                  }}
-                >PLACEHOLDER</a>.
-              </b>
-              the remaining part of the application was my presentation slides, with details of my open source contributions and development tooling,
-              it is also available at {" "} <a href="" style={{
-                paddingLeft: 0,
-              }}>PLACEHOLDER</a>
+              For the application to this job, I made a screencast showing parts of the project in Computer Vision that automatically hides
+              Personal Identifiable Information (known as PII) from identity cards
+              <a href="">PLACEHOLDER</a>.
+              the remaining part of the application were my presentation slides, with details of my Open Source Software contributions,
+              it is also available at <a href="">PLACEHOLDER</a>
             </p>
           </div>
         </li>
@@ -73,25 +53,34 @@ export function WorkHistory() {
           </p>
           <div className="tasks">
             <p>
-              <b>
-                <a
-                  href="https://www.nmrium.org/about"
-                  style={{
-                    paddingLeft: 0,
-                  }}
-                >
-                  NMRium
-                </a>
-              </b>{" "}
-              is a platform for NMR visualisation and analysis. My role involved
+              <b>Chemical Data Binary Parsers</b>. <a
+                href="https://www.nmrium.org/about">
+                NMRium
+              </a>
+              is a web-platform for <abbr>NMR</abbr> (Nuclear Magnetic Resonance) visualisation and analysis.
+              My role involved
               writing binary data parsers for NMR data. For example, a Varian
               Converter to parse (Varian/Agilent) data.
             </p>
             <p>
               <b>Image analysis</b>. Anonymise counterfeit data for Interpol and
-              other organisations. A public playground is available at{" "}
+              other organisations. A public playground is available at
               <a href="http://mrz.zakodium.com/">MRZ Website</a>. It takes a few
               seconds to load, a random ID-card image can be dropped to test it.
+              The project involved several interesting challenges:
+              <ul>
+                <li>Creating a database of IDs,</li>
+                <li>Augmenting and cleaning the data,</li>
+                <li>Fine tune several neural networks to classify and
+                  returns a bounding box for signatures, faces and other PIIs,</li>
+                <li>Minimize the weight of the model to a minimum (2 Mb) for reduce
+                  the loading time,
+                </li>
+                <li>Creating other neural networks from scratch, to recognise whether the images were
+                  rotated, and fix the perspective of the ID card.
+                </li>
+              </ul>
+
             </p>
             <p>
               <b>Optimisation</b>. Fast-Combinatorial Non-Negative Least
