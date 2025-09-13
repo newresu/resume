@@ -9,22 +9,23 @@ export function Hobbies() {
           </p>
           <p>
             During 2019-2021 I volunteered at farms, hostels, and other places
-            while travelling and learning to code as well as some Greek and
-            Italian. This was a very rewarding experience. During that time I{" "}
+            while travelling. In my spare time I learnt Javascript. 
+            As a learning exercise during this process, I {" "}
             <a href="https://misterybodon.github.io/web/">coded a blog</a>.
+            Later on, this experience helped me land my first job as a Typescript Developer.
           </p>
         </li>
         <li>
           <p>
-            <strong>Mind and Body</strong>
+            <strong>Time in Nature</strong>
           </p>
           <p>
-            Climbing, hiking, camping and outdoor activities help me to stay
-            healthy and happy.
+            Jogging or walking outdoors help disconnect and recharge.
           </p>
           <p>
-            I practice Zen meditation and have volunteered for a few Buddhist
-            Centres in Italy (Thabarwa) and England (Kadampa).
+            After volunteering for Buddhist
+            Centres I made a habit of meditating and breathing exercises. 
+            I perform this daily, early in the morning.
           </p>
         </li>
         <li>
@@ -32,9 +33,8 @@ export function Hobbies() {
             <strong>Computer-Related Hobbies</strong>
           </p>
           <p>
-            I like to learn about new technologies and programming languages,
-            and recently got involved with AWK programming language, and
-            creating simple experiments with Arduinos.
+            I like to learn about programming languages. The most recent one is Rust.
+            Another hobby of mine is to experiment with Arduinos, primarily to program its sensors.
           </p>
         </li>
       </ul>

@@ -1,10 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import chevronRight from "./assets/images/chevron-right.svg";
+import chevronDown from "./assets/images/chevron-down.svg";
+
 
 type SectionProps = {
   children: React.ReactNode;
   classNames: string[];
   title: string;
+  id?: string;
 };
 export function Section({ title, children, classNames }: SectionProps) {
   const [isFolded, setIsFolded] = useState(true);
@@ -18,8 +22,8 @@ export function Section({ title, children, classNames }: SectionProps) {
       id={`${title.toLowerCase()}_title`}
       style={{ cursor: "pointer" }}
     >
-      {title}
-      {isFolded ? "›" : "⌄"}
+      {" " + title}
+      {isFolded ? <img src={chevronDown} height={26} alt="Click to Open Section." /> :<img src={chevronRight} height={26} alt="Click to Close Section." />}
     </h2>
   );
 
