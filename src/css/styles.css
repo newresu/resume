@@ -1,0 +1,72 @@
+/* Whole document */
+body {
+  display: grid;
+  place-content: start;
+  place-items: stretch;
+  gap: 2rem;
+  padding: 2%;
+  margin: auto;
+  min-width: 300px;
+  max-width: 800px;
+  text-align: left;
+}
+/* Title of the resume */
+h1 {
+  color: #757575;
+  text-align: center;
+}
+
+/* Titles of categories */
+h2 {
+  color: var(--color);
+  padding: 1rem;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+/* Horizontal separators */
+hr {
+  color: #a6a6a6;
+}
+
+.img-link {
+  display: inline-block;
+}
+
+.img-link:hover {
+  background-color: var(--background);
+  text-decoration: underline;
+  text-shadow: none;
+  color: var(--color);
+}
+
+p.welcome {
+  text-align: center;
+}
+.tasks {
+  padding-left: 0;
+}
+
+
+ol.image-tasks {
+  padding-top:1rem;
+}
+ol.image-tasks li {
+  list-style: inside decimal;
+  padding-left: 1rem
+}
+
+@media only screen and (min-width: 800px) {
+  /* There is a bar just before each category */
+  h2:before {
+    content: "";
+    display: inline-block;
+    margin-right: 1%;
+    width: 16%;
+    height: 0.8rem;
+    background-color: #9cb770;
+  }
+  .tasks {
+    padding-left: 1rem;
+  }
+}
